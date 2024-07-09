@@ -1,11 +1,12 @@
 {
-  "name": "kasumi-template",
+  "name": "hiyori",
   "version": "0.1.0",
-  "description": "Template for Kasumi",
+  "description": "Hiyori Bot!",
   "main": "index.js",
   "scripts": {
     "start": "node --nolazy -r ts-node/register -r tsconfig-paths/register src/index.ts",
-    "pm2": "node src/pm2/index.js"
+    "pm2": "node src/pm2/index.js",
+    "test": "export LOG_LEVEL=TRACE && npm start | bunyan"
   },
   "repository": {
     "type": "git",
@@ -16,16 +17,22 @@
     "kook",
     "bot"
   ],
-  "author": "Hexona",
+  "author": "saltcute",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hexona69/kasumi-template/issues"
+    "url": "https://github.com/saltcute/hiyori/issues"
   },
-  "homepage": "https://github.com/hexona69/kasumi-template#readme",
+  "homepage": "https://hiyori.bot",
   "dependencies": {
+    "@saltcute/kasumi-apex": "^0.1.3",
+    "@saltcute/kasumi-essential": "^0.1.2",
+    "@saltcute/kasumi-wordle": "^0.1.3",
     "kasumi.js": "^0.6.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.2",
     "upath": "^2.0.1"
+  },
+  "localDependencies": {
+    "@saltcute/kasumi-apex": "../kasumi-apex"
   }
 }
