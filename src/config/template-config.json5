@@ -12,4 +12,6 @@
     "kasumi::config.mongoConnectionString": "mongodb://localhost:27017",
     "kasumi::config.mongoDatabaseName": "kasumi",
     "kasumi::config.mongoCollectionName": "template",
+
+    "apex::auth.ALSKey": "",
 }
